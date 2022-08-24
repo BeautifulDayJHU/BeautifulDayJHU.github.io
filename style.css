@@ -1,0 +1,698 @@
+/*CSS global*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+
+
+    --orange: #fb8500;
+    --faint-orange: rgba(251, 133, 0, 0.82);
+    --dark-navy: rgba(19, 50, 122, 0.92);
+    --dark-navy-solid: rgb(17, 43, 104);
+    --lightning-blue: rgba(0, 102, 255, 0.9);
+    --sky-blue: rgba(65, 170, 215, 0.8);
+    --water-blue: rgba(159, 245, 251, 0.8);
+    --chalk-yellow: rgba(250, 246, 163, 0.584);
+    --pink: rgba(238, 116, 247, 0.9);
+    --faint-pink: rgba(253, 171, 212, 0.712);
+    --dark-pink: rgba(248, 42, 162, 0.9);
+    ;
+}
+
+
+html {
+    font-size: 10px;
+    font-family: 'SF Pro Display', sans-serif;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 100rem;
+    margin: 0 auto;
+
+}
+
+#wide {
+    max-width: 110rem;
+}
+
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    width: 100%;
+    height: 4.4rem;
+    background-color: var(--sky-blue);
+    backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+    display: none;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 0 1rem;
+    transition: opacity 0.4s;
+}
+
+.nav-link:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.nav-link-logo {
+    width: 1.6rem;
+    height: 4.4rem;
+    background: url("images/icons/sun-svgrepo-com-svg.svg") center no-repeat;
+}
+
+/* Welcome page*/
+.welcome {
+    background: url("images/welcome_background.png");
+    margin-top: 4.4rem;
+    width: 100vw;
+}
+
+.title-container {
+    width: 40%;
+    float: left;
+    padding-left: 7rem;
+    margin-bottom: 2rem;
+    color: var(--dark-navy);
+    word-wrap: break-word;
+    position: relative;
+}
+
+.wiki {
+    width: 90%;
+    margin: auto;
+    text-align: left;
+}
+
+.demo-wide-container{
+    background: url("images/product01.png");
+    padding: 4.5rem auto;
+    text-align: center;
+    min-height: 50vh;
+}
+
+.demo-wide-container img {
+    width: 95%;
+    min-height: 50vh;
+    padding: 8rem auto;
+    margin: 8rem 0;
+}
+
+.demo-image {
+    position: relative;
+    width: 20%;
+    float: left;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    max-height: 40vh;
+    word-wrap: break-word;
+}
+
+.demo-image-box {
+    /* the container element */
+    position: relative;
+    margin-bottom: 2vw;
+    text-align: center;
+    cursor: pointer;
+}
+
+.demo-image-box img {
+    /* The actual image */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    color: #063B8B;
+    font-weight: bold;
+    text-align: left;
+    width: 50rem;
+    word-wrap: break-word;
+    padding-left: 2rem;
+    padding-top: 5.5rem;
+}
+
+.title-heading {
+    padding-top: 0rem;
+    font-size: 6rem;
+    line-height: 1.4;
+
+}
+
+.title-sub-heading {
+    color: var(--dark-navy-solid);
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    letter-spacing: 0.008rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.request-button {
+    position: relative;
+    margin-top: 3rem;
+
+    height: 5rem;
+    width: 40rem;
+    cursor: pointer;
+    border: solid 2px white;
+    border-radius: 8px;
+    background-color: var(--pink);
+    flex-basis: 48%;
+}
+
+.request-button a {
+    text-align: center;
+    padding: 2rem 10rem;
+    font-size: 14rem;
+}
+
+.request-button h3 {
+    color: #fff;
+    margin: auto;
+    padding-top: 1.5rem;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.request-button:hover {
+    background-color: var(--dark-pink);
+    box-shadow: 0 0 8px 0px var(--lightning-blue);
+    transition: 0.4s;
+}
+
+/* Product section */
+.product {
+    background: url("images/product01.png");
+    background-repeat: repeat-y;
+}
+
+.title-center {
+    text-align: center;
+    color: black;
+    margin: 3rem, auto;
+}
+
+.title-center h2 {
+    padding-top: 6rem;
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+    color: var(--dark-navy-solid);
+}
+
+.features {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+}
+
+.features-col {
+    padding: 2rem 2rem;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--chalk-yellow);
+    box-shadow: 5px 5px var(--faint-pink);
+}
+
+.features-col h2 {
+    color: var(--dark-navy-solid);
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.features-col li {
+    color: var(--dark-navy-solid);
+    margin-top: 1rem;
+    margin-left: 2rem;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 400px;
+    line-height: 1.5;
+}
+
+/* Our Story */
+.big-gap {
+    margin-top: 50px;
+}
+.section-box {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    text-align: left;
+    z-index: 1;
+}
+
+.section-box img {
+    width: 100%;
+}
+
+/* Section text */
+.content {
+    width: 50%;
+    word-wrap: break-word;
+    margin-left: 5rem;
+    position: relative;
+    margin-top: 8vh;
+}
+
+#content-l {
+    margin-left: 0;
+    width: 50%;
+}
+.content h1 {
+    font-size: 4vw;
+    color: var(--dark-navy-solid);
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    color: var(--dark-navy-solid);
+    line-height: 1.4;
+    font-size: 1.8rem;
+    display: inline-block;
+    position: relative;
+}
+
+.content ul {
+    list-style-type: none;
+    line-height: 120%;
+}
+
+.content li {
+    color: var(--smoke-white);
+    line-height: 1.8;
+    font-size: 2rem;
+    word-wrap: break-word;
+    position: relative;
+    margin-left: -15px;
+}
+
+.content a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.content a:hover {
+    background-color: var(--water-blue);
+    color: black;
+}
+
+/* wiki image column */
+.image-box {
+    width: 45%;
+    margin-top: 8vh;
+}
+
+#image-l {
+    margin-left: 2rem;
+    width: 50%;
+    min-height: 80vh;
+}
+
+.image-box img {
+    width: 100%;
+    max-height: 100%;
+    z-index: 5;
+}
+
+#alive-image:hover {
+    box-shadow: 0 0 14px 0px var(--lightning-blue);
+    transition: 0.2s;
+}
+
+/* Contact stuff */
+.contact-col {
+    width: 80%;
+    flex-basis: 48%;
+    margin: 0 auto;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: var(--dark-navy-solid);
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+    color: var(--orange);
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--dark-navy-solid);
+}
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 1rem;
+    outline: none;
+    border: 1px solid var(--dark-navy);
+    box-sizing: border-box;
+}
+
+/* Contact col buttons */
+
+/* the "contact us" button */
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--dark-navy-solid);
+    border: 2px solid var(--sky-blue);
+    padding: 0.8rem 1.8rem;
+    font-weight: 400px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+    margin-bottom: 80px;
+}
+
+.hero-btn:hover {
+    background: var(--sky-blue);
+    transition: 0.4s;
+}
+
+
+.watch {
+    background: url("images/hero/watch/watch_large.jpg") center no-repeat;
+}
+
+.title-heading-watch {
+    height: 7.8rem;
+    background: url("images/hero/watch/logo_watch_large.png") center no-repeat;
+    background-size: auto 7.8rem;
+    margin-top: 1.6rem;
+}
+
+
+/* Moved to the bottom of all section styles to keep consistent styles */
+.hero {
+    width: 100%;
+    height: 59rem;
+    background-position: center;
+}
+
+.welcome {
+    border-top: none;
+}
+
+/* End */
+
+@media screen and (max-width: 1068px) {
+    .welcome {
+        background: url("images/hero/iphone-11-pro/iphone_11_pro_medium.jpg");
+    }
+
+    .product {
+        background: url("images/hero/iphone-11/iphone_11_medium.jpg");
+    }
+
+    .watch {
+        background: url("images/hero/watch/watch_medium.jpg");
+    }
+
+    .hero {
+        height: 65rem;
+        background-size: 0 69.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .title-heading {
+        font-size: 4.4rem;
+    }
+
+    .sub-heading {
+        font-size: 2.4rem;
+    }
+
+    .cta-link:nth-child(2) {
+        margin-left: 2rem;
+    }
+
+    .title-heading-watch {
+        height: 6.2rem;
+        background: url("images/hero/watch/logo_watch_medium.png") center no-repeat;
+        background-size: auto 6.2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 4.8rem;
+        transition: background-color .36s cubic-bezier(0.32, 0.08, 0.24, 1),
+            height 0.56s cubic-bezier(0.32, 0.08, 0.24, 1);
+    }
+
+    header .container {
+        padding: 0;
+    }
+
+    .welcome {
+        margin-top: 4.8rem;
+    }
+
+    .nav-list {
+        margin-top: 0;
+    }
+
+    .nav-list-mobile {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 4.8rem;
+        height: 4.8rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-item-hidden {
+        display: none;
+    }
+
+    .mobile-menu {
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .line {
+        position: aboslute;
+        margin-left: 40px;
+        width: 1.7rem;
+        height: 1px;
+        background-color: #fff;
+        transition: margin-top .3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .line-top {
+        margin-top: 3px;
+    }
+
+    .line-bottom {
+        margin-top: 0.4rem;
+    }
+
+    .active .line-top {
+        margin-top: 0;
+        transform: rotate(45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    .active .line-bottom {
+        margin-top: 0;
+        transform: rotate(-45deg);
+        transition: transform .3192s .1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+    }
+
+    header.active {
+        height: 100%;
+        background-color: #000;
+    }
+
+    .nav-link-apple {
+        width: 1.8rem;
+        height: 4.8rem;
+        position: relative;
+        z-index: 1500;
+    }
+
+    .nav-link-bag {
+        margin-right: 50px;
+        width: 1.6rem;
+        height: 4.8rem;
+        transition: opacity 3s;
+    }
+
+    .nav {
+        position: relative;
+    }
+
+    .nav-link {
+        font-size: 1.7rem;
+        padding: 0;
+        margin: auto 0;
+    }
+
+    .nav-list-larger {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+    }
+
+    .active .nav-list-larger {
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .nav-link-bag {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .nav-list-larger .nav-item {
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255, 255, 255, .1);
+    }
+
+    .nav-list-larger .nav-item:nth-child(9) {
+        border-bottom: none;
+    }
+
+    .active .nav-list-larger .nav-item {
+        animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 735px) {
+    .welcome {
+        background: url("images/hero/iphone-11-pro/iphone_11_pro_small.jpg");
+    }
+
+    .product {
+        background: url("images/hero/iphone-11/iphone_11_small.jpg");
+    }
+
+    .watch {
+        background: url("images/hero/watch/watch_small.jpg");
+    }
+
+    .hero {
+        height: 50rem;
+        background-size: auto 54.8rem;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+    }
+
+    .nav-link-bag {
+        margin-right: 30px;
+        width: 1.6rem;
+        height: 4.8rem;
+        transition: opacity 3s;
+    }
+
+    .title {
+        padding-top: 3.7rem;
+    }
+
+    .title-heading {
+        font-size: 3.2rem;
+    }
+
+    .title-sub-heading {
+        font-size: 1.9rem;
+    }
+
+    .title-heading-watch {
+        margin-top: -0.5rem;
+        margin-bottom: 0;
+    }
+
+    .title-price {
+        font-size: 1.4rem;
+    }
+
+    .cta {
+        margin-top: 0.7rem;
+    }
+
+    .cta-link {
+        font-size: 1.9rem;
+    }
+
+}
