@@ -24,17 +24,17 @@
 html {
     font-size: 10px;
     font-family: 'SF Pro Display', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a {
     display: block;
     text-decoration: none;
-}
+} 
 
 .container {
     max-width: 100rem;
     margin: 0 auto;
-
 }
 
 #wide {
@@ -107,14 +107,14 @@ header {
 }
 
 .demo-wide-container{
-    background: url("images/product01.png");
+   
     padding: 4.5rem auto;
     text-align: center;
     min-height: 50vh;
 }
 
 .demo-wide-container img {
-    width: 95%;
+    width: 100%;
     min-height: 50vh;
     padding: 8rem auto;
     margin: 8rem 0;
@@ -267,7 +267,9 @@ header {
 .big-gap {
     margin-top: 50px;
 }
+
 .section-box {
+    
     display: flex;
     width: 95%;
     margin: auto;
@@ -292,11 +294,18 @@ header {
     margin-left: 0;
     width: 50%;
 }
+
+#contact-l {
+    margin-left: 11.5rem;
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
 .content h1 {
     font-size: 4vw;
     color: var(--dark-navy-solid);
-    margin-top: -1rem;
-    margin-bottom: 1rem;
+    
+    margin-bottom: 0.5rem;
 }
 
 .content p {
@@ -341,7 +350,7 @@ header {
 #image-l {
     margin-left: 2rem;
     width: 50%;
-    min-height: 80vh;
+ 
 }
 
 .image-box img {
@@ -357,9 +366,9 @@ header {
 
 /* Contact stuff */
 .contact-col {
-    width: 80%;
-    flex-basis: 48%;
-    margin: 0 auto;
+    width: 40%;
+    margin-left: 11.5rem;
+    align-items: left;
 }
 
 .contact-col div {
@@ -390,9 +399,9 @@ header {
 .contact-col input, .contact-col textarea {
     width: 100%;
     padding: 15px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.3rem;
     outline: none;
-    border: 1px solid var(--dark-navy);
+    border: 1.5px solid var(--sky-blue);
     box-sizing: border-box;
 }
 
@@ -445,17 +454,7 @@ header {
 /* End */
 
 @media screen and (max-width: 1068px) {
-    .welcome {
-        background: url("images/hero/iphone-11-pro/iphone_11_pro_medium.jpg");
-    }
-
-    .product {
-        background: url("images/hero/iphone-11/iphone_11_medium.jpg");
-    }
-
-    .watch {
-        background: url("images/hero/watch/watch_medium.jpg");
-    }
+  
 
     .hero {
         height: 65rem;
@@ -640,18 +639,7 @@ header {
 }
 
 @media screen and (max-width: 735px) {
-    .welcome {
-        background: url("images/hero/iphone-11-pro/iphone_11_pro_small.jpg");
-    }
-
-    .product {
-        background: url("images/hero/iphone-11/iphone_11_small.jpg");
-    }
-
-    .watch {
-        background: url("images/hero/watch/watch_small.jpg");
-    }
-
+  
     .hero {
         height: 50rem;
         background-size: auto 54.8rem;
