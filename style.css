@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
 
-
     --orange: #fb8500;
     --faint-orange: rgba(251, 133, 0, 0.82);
     --dark-navy: rgba(19, 50, 122, 0.92);
@@ -13,7 +12,7 @@
     --lightning-blue: rgba(0, 102, 255, 0.9);
     --sky-blue: rgba(65, 170, 215, 0.8);
     --water-blue: rgba(159, 245, 251, 0.8);
-    --chalk-yellow: rgba(250, 246, 163, 0.584);
+    --chalk-blue: #DFF7FD;
     --pink: rgba(238, 116, 247, 0.9);
     --faint-pink: rgba(253, 171, 212, 0.712);
     --dark-pink: rgba(248, 42, 162, 0.9);
@@ -85,7 +84,8 @@ header {
 
 /* Welcome page*/
 .welcome {
-    background: url("images/welcome_background.png");
+    /* background: url("images/welcome_background.png"); */
+    background: url("images/welcome_background_new.png");
     margin-top: 4.4rem;
     width: 100vw;
 }
@@ -181,7 +181,7 @@ header {
     cursor: pointer;
     border: solid 2px white;
     border-radius: 8px;
-    background-color: var(--pink);
+    background-color: var(--orange);
     flex-basis: 48%;
 }
 
@@ -242,8 +242,8 @@ header {
     border-bottom-right-radius: 10px;
     position: relative;
     overflow: hidden;
-    background-color: var(--chalk-yellow);
-    box-shadow: 5px 5px var(--faint-pink);
+    background-color: var(--chalk-blue);
+    box-shadow: 5px 5px var(--faint-orange);
 }
 
 .features-col h2 {
@@ -296,6 +296,7 @@ header {
 }
 
 #contact-l {
+    margin-top: 5rem;
     margin-left: 11.5rem;
     width: 50%;
     margin-bottom: 2rem;
